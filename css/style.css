@@ -1,0 +1,52 @@
+/*
+css-animation-sandbox
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid purple; */
+}
+body {
+  background-color: #336699;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #3e4756;
+  padding: 0.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.animations {
+  overflow: hidden;
+}
+
+.node {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
